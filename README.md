@@ -19,7 +19,7 @@ Paste your user cookie, or enter to use default:
 ```
 _if you wish, you can edit the script and set `USER_COOKIE` to the string. 
 
-> In testing it appears that you can get by with only using the `uf4=` or `uf4-rememberme=` values. 
+> In testing it appears that you can get by with only using the `uf4=` value. 
 
 ## Todo:
 In theory it should be possible to allow curl to login and get its own cookies, in practice this was not done, simply because for our purpose this was suffucient. 
