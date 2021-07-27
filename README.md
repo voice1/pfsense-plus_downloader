@@ -21,6 +21,45 @@ _if you wish, you can edit the script and set `USER_COOKIE` to the string.
 
 > In testing it appears that you can get by with only using the `uf4=` value. 
 
+### Verification
+If you wish to verify your download using the `.sha256` file, you will have to enable `VERIFY_CHECKSUM=1`
+
+## Example
+```
+./batch-download.sh
+Enter the pfsense+ version to download: 21.05
+Paste your user cookie, or enter to use default: uf4=YouDidntThinkItWouldBeThatEasyDidYou?;
+Downloading https://partnervault.netgate.com/files/firmware/memstick/pfSense-plus-memstick-21.05-RELEASE-amd64.img.gz => pfSense-plus-memstick-21.05-RELEASE-amd64.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-memstick-21.05-RELEASE-amd64.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Downloading https://partnervault.netgate.com/files/firmware/memstick/pfSense-plus-memstick-ADI-21.05-RELEASE-amd64.img.gz => pfSense-plus-memstick-ADI-21.05-RELEASE-amd64.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-memstick-ADI-21.05-RELEASE-amd64.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Downloading https://partnervault.netgate.com/files/firmware/memstick/pfSense-plus-memstick-XG-7100-21.05-RELEASE-amd64.img.gz => pfSense-plus-memstick-XG-7100-21.05-RELEASE-amd64.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-memstick-XG-7100-21.05-RELEASE-amd64.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Downloading https://partnervault.netgate.com/files/firmware/memstick/pfSense-plus-memstick-serial-21.05-RELEASE-amd64.img.gz => pfSense-plus-memstick-serial-21.05-RELEASE-amd64.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-memstick-serial-21.05-RELEASE-amd64.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Downloading https://partnervault.netgate.com/files/firmware/sg-3100/pfSense-plus-SG-3100-recover-21.05-RELEASE-armv7.img.gz => pfSense-plus-SG-3100-recover-21.05-RELEASE-armv7.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-SG-3100-recover-21.05-RELEASE-armv7.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Downloading https://partnervault.netgate.com/files/firmware/sg-2100/pfSense-plus-SG-2100-recovery-21.05-RELEASE-aarch64.img.gz => pfSense-plus-SG-2100-recovery-21.05-RELEASE-aarch64.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-SG-2100-recovery-21.05-RELEASE-aarch64.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Downloading https://partnervault.netgate.com/files/firmware/sg-1100/pfSense-plus-SG-1100-recover-21.05-RELEASE-armv7.img.gz => pfSense-plus-SG-1100-recover-21.05-RELEASE-armv7.img.gz
+################################################################################################################################################################################################### 100.0%
+Downloading checksum pfSense-plus-SG-1100-recover-21.05-RELEASE-armv7.img.gz.sha256
+################################################################################################################################################################################################### 100.0%
+Done. Have a nice day!
+```
+
 ## Todo:
 In theory it should be possible to allow curl to login and get its own cookies, in practice this was not done, simply because for our purpose this was suffucient. 
 
