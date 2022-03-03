@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-_verison = 0.0.2
+ VERSION=0.0.2
 
 # Download pfsense+ firmware from site.
 # Requires cookies to be valid first so a browswer login and  fetch of the cookie is required.
